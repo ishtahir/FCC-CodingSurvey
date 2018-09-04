@@ -5,9 +5,6 @@
         <title>The Coding Survey</title>
         <link rel="stylesheet" href="style.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
-
-        </script>
     </head>
     <body>
         <header>
@@ -18,11 +15,11 @@
             <form id="survey-form">
                 <section>
                     <label for="name" id="name-label">Name:</label>
-                    <input type="text" class="text-inputs" id="name" placeholder="John Smith" />
+                    <input type="text" class="text-inputs" id="name" placeholder="John Smith" required />
                     <label for="email" id="email-label">Email:</label>
                     <input type="email" class="text-inputs" id="email" placeholder="example@domain.com" required />
-                    <label for="number" id="number-label">Phone:</label>
-                    <input type="tel" class="text-inputs" id="number" min="0" max="9" placeholder="555-123-4567" required />
+                    <label for="number" id="number-label">Age: </label>
+                    <input type="number" class="text-inputs" id="number" min="15" max="100" placeholder="18" required />
                 </section>
 
                 <section>
@@ -38,31 +35,56 @@
                 </section>
 
                 <section>
-                    <p>Which of these services have you tried?</p>
+                    <p>Which of these services have you tried: (Check all that apply)</p>
                     <div class="group">
-                        <input type="radio" name="techsite" value="treehouse">
-                        <label for="number" id="radio-label">Treehouse</label>
+                        <input type="checkbox" name="techsite" id="treehouse-check" value="treehouse">
+                        <label for="treehouse-check" id="radio-label">Treehouse</label>
                     </div>
                     <div class="group">
-                        <input type="radio" name="techsite" value="udacity">
-                        <label for="number" id="radio-label">Udacity</label>
+                        <input type="checkbox" name="techsite" id="udacity-check" value="udacity">
+                        <label for="udacity-check" id="radio-label">Udacity</label>
                     </div>
                     <div class="group">
-                        <input type="radio" name="techsite" value="codecademy">
-                        <label for="number" id="radio-label">Codecademy</label>
+                        <input type="checkbox" name="techsite" id="codecademy-check" value="codecademy">
+                        <label for="codecademy-check" id="radio-label">Codecademy</label>
                     </div>
                     <div class="group">
-                        <input type="radio" name="techsite" value="udemy">
-                        <label for="number" id="radio-label">Udemy</label>
+                        <input type="checkbox" name="techsite" id="udemy-check" value="udemy">
+                        <label for="udemy-check" id="radio-label">Udemy</label>
                     </div>
                 </section>
 
                 <section>
-                    <textarea></textarea>
-                    <button type="submit" id="submit" name="button">Submit</button>
+                    <p>Highest level of completed Education:</p>
+                    <div class="group">
+                        <input type="radio" name="education" id="bootcamp-radio" value="bootcamp">
+                        <label for="bootcamp-radio" id="radio-label">Coding Boot Camp</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="education" id="highschool-radio" value="highschool">
+                        <label for="highschool-radio" id="radio-label">High School</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="education" id="associates-radio" value="associates">
+                        <label for="associates-radio" id="radio-label">Associates</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="education" id="bachelors-radio" value="bachelors">
+                        <label for="bachelors-radio" id="radio-label">Bachelors</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="education" id="masters-radio" value="masters">
+                        <label for="masters-radio" id="radio-label">Masters or higher</label>
+                    </div>
                 </section>
 
+                <section>
+                    <p>Addition comments:</p>
+                    <textarea rows="10"></textarea>
+                    <button type="submit" id="submit" name="button">Submit</button>
+                </section>
             </form>
         </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
