@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>The Coding Survey</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">The Coding Survey</h1>
+            <p id="description">Please fill it out.</p>
+        </header>
+        <main>
+            <form id="survey-form">
+                <section>
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" class="text-inputs" id="name" placeholder="John Smith" />
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" class="text-inputs" id="email" placeholder="example@domain.com" required />
+                    <label for="number" id="number-label">Phone:</label>
+                    <input type="tel" class="text-inputs" id="number" min="0" max="9" placeholder="555-123-4567" required />
+                </section>
+
+                <section>
+                    <label for="dropdown" id="dropdown-label">How many online bootcamps have you tried:</label>
+                    <select id="dropdown" name="">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+
+                <section>
+                    <p>Which of these services have you tried?</p>
+                    <div class="group">
+                        <input type="radio" name="techsite" value="treehouse">
+                        <label for="number" id="radio-label">Treehouse</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="techsite" value="udacity">
+                        <label for="number" id="radio-label">Udacity</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="techsite" value="codecademy">
+                        <label for="number" id="radio-label">Codecademy</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="techsite" value="udemy">
+                        <label for="number" id="radio-label">Udemy</label>
+                    </div>
+                </section>
+
+                <section>
+                    <textarea></textarea>
+                    <button type="submit" id="submit" name="button">Submit</button>
+                </section>
+
+            </form>
+        </main>
+    </body>
+</html>
