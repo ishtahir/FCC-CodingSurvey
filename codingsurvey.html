@@ -13,16 +13,18 @@
         </header>
         <main>
             <form id="survey-form">
-                <section>
+                <fieldset>
+                    <legend>Basic Info</legend>
                     <label for="name" id="name-label">Name:</label>
                     <input type="text" class="text-inputs" id="name" placeholder="John Smith" required />
                     <label for="email" id="email-label">Email:</label>
                     <input type="email" class="text-inputs" id="email" placeholder="example@domain.com" required />
                     <label for="number" id="number-label">Age: </label>
                     <input type="number" class="text-inputs" id="number" min="15" max="100" placeholder="18" required />
-                </section>
+                </fieldset>
 
-                <section>
+                <fieldset>
+                    <legend>Bootcamps</legend>
                     <label for="dropdown" id="dropdown-label">How many online bootcamps have you tried:</label>
                     <select id="dropdown" name="">
                         <option value="0">0</option>
@@ -32,9 +34,10 @@
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                </section>
+                </fieldset>
 
-                <section>
+                <fieldset>
+                    <legend>Services</legend>
                     <p>Which of these services have you tried: (Check all that apply)</p>
                     <div class="group">
                         <input type="checkbox" name="techsite" id="treehouse-check" value="treehouse">
@@ -52,9 +55,10 @@
                         <input type="checkbox" name="techsite" id="udemy-check" value="udemy">
                         <label for="udemy-check" id="radio-label">Udemy</label>
                     </div>
-                </section>
+                </fieldset>
 
-                <section>
+                <fieldset>
+                    <legend>Education</legend>
                     <p>Highest level of completed Education:</p>
                     <div class="group">
                         <input type="radio" name="education" id="bootcamp-radio" value="bootcamp">
@@ -76,13 +80,14 @@
                         <input type="radio" name="education" id="masters-radio" value="masters">
                         <label for="masters-radio" id="radio-label">Masters or higher</label>
                     </div>
-                </section>
+                </fieldset>
 
-                <section>
+                <fieldset>
+                    <legend>Comments & Questions</legend>
                     <p>Addition comments:</p>
                     <textarea rows="10"></textarea>
                     <button type="submit" id="submit" name="button">Submit</button>
-                </section>
+                </fieldset>
             </form>
         </main>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
