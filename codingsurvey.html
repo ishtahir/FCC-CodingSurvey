@@ -7,93 +7,95 @@
         <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1 id="title">The Coding Survey</h1>
-            <p id="description">Please fill it out.</p>
-        </header>
-        <main>
-            <form id="survey-form">
-                <fieldset>
-                    <legend>Basic Info</legend>
-                    <label for="name" id="name-label">Name:</label>
-                    <input type="text" class="text-inputs" id="name" placeholder="John Smith" required />
-                    <label for="email" id="email-label">Email:</label>
-                    <input type="email" class="text-inputs" id="email" placeholder="example@domain.com" required />
-                    <label for="number" id="number-label">Age: </label>
-                    <input type="number" class="text-inputs" id="number" min="15" max="100" placeholder="18" required />
-                </fieldset>
+        <div class="container">
+            <header>
+                <h1 id="title">The Coding Survey</h1>
+                <p id="description">Please fill it out.</p>
+            </header>
+            <main>
+                <form id="survey-form">
+                    <fieldset>
+                        <legend>Basic Info</legend>
+                        <label for="name" id="name-label">Name:</label>
+                        <input type="text" class="text-inputs" id="name" placeholder="John Smith" required />
+                        <label for="email" id="email-label">Email:</label>
+                        <input type="email" class="text-inputs" id="email" placeholder="example@domain.com" required />
+                        <label for="number" id="number-label">Age: </label>
+                        <input type="number" class="text-inputs" id="number" min="15" max="100" placeholder="18" required />
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Bootcamps</legend>
-                    <label for="dropdown" id="dropdown-label">How many online bootcamps have you tried:</label>
-                    <select id="dropdown" name="">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </fieldset>
+                    <fieldset>
+                        <legend>Bootcamps</legend>
+                        <label for="dropdown" id="dropdown-label">How many online bootcamps have you tried:</label>
+                        <select id="dropdown" name="">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Services</legend>
-                    <p>Which of these services have you tried: (Check all that apply)</p>
-                    <ul class="services">
-                        <li class="group">
-                            <input type="checkbox" name="techsite" id="treehouse-check" value="treehouse">
-                            <label for="treehouse-check" id="radio-label">Treehouse</label>
-                        </li>
-                        <li class="group">
-                            <input type="checkbox" name="techsite" id="udacity-check" value="udacity">
-                            <label for="udacity-check" id="radio-label">Udacity</label>
-                        </li>
-                        <li class="group">
-                            <input type="checkbox" name="techsite" id="codecademy-check" value="codecademy">
-                            <label for="codecademy-check" id="radio-label">Codecademy</label>
-                        </li>
-                        <li class="group">
-                            <input type="checkbox" name="techsite" id="udemy-check" value="udemy">
-                            <label for="udemy-check" id="radio-label">Udemy</label>
-                        </li>
-                    </ul>
-                </fieldset>
+                    <fieldset>
+                        <legend>Services</legend>
+                        <p>Which of these services have you tried: (Check all that apply)</p>
+                        <ul class="services">
+                            <li class="group">
+                                <input type="checkbox" name="techsite" id="treehouse-check" value="treehouse">
+                                <label for="treehouse-check" id="radio-label">Treehouse</label>
+                            </li>
+                            <li class="group">
+                                <input type="checkbox" name="techsite" id="udacity-check" value="udacity">
+                                <label for="udacity-check" id="radio-label">Udacity</label>
+                            </li>
+                            <li class="group">
+                                <input type="checkbox" name="techsite" id="codecademy-check" value="codecademy">
+                                <label for="codecademy-check" id="radio-label">Codecademy</label>
+                            </li>
+                            <li class="group">
+                                <input type="checkbox" name="techsite" id="udemy-check" value="udemy">
+                                <label for="udemy-check" id="radio-label">Udemy</label>
+                            </li>
+                        </ul>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Education</legend>
-                    <p>Highest level of completed Education:</p>
-                    <ul class="education">
-                        <li class="group">
-                            <input type="radio" name="education" id="bootcamp-radio" value="bootcamp">
-                            <label for="bootcamp-radio" id="radio-label">Coding Boot Camp</label>
-                        </li>
-                        <li class="group">
-                            <input type="radio" name="education" id="highschool-radio" value="highschool">
-                            <label for="highschool-radio" id="radio-label">High School</label>
-                        </li>
-                        <li class="group">
-                            <input type="radio" name="education" id="associates-radio" value="associates">
-                            <label for="associates-radio" id="radio-label">Associates</label>
-                        </li>
-                        <li class="group">
-                            <input type="radio" name="education" id="bachelors-radio" value="bachelors">
-                            <label for="bachelors-radio" id="radio-label">Bachelors</label>
-                        </li>
-                        <li class="group">
-                            <input type="radio" name="education" id="masters-radio" value="masters">
-                            <label for="masters-radio" id="radio-label">Masters or higher</label>
-                        </li>
-                    </ul>
-                </fieldset>
+                    <fieldset>
+                        <legend>Education</legend>
+                        <p>Highest level of completed Education:</p>
+                        <ul class="education">
+                            <li class="group">
+                                <input type="radio" name="education" id="bootcamp-radio" value="bootcamp">
+                                <label for="bootcamp-radio" id="radio-label">Coding Boot Camp</label>
+                            </li>
+                            <li class="group">
+                                <input type="radio" name="education" id="highschool-radio" value="highschool">
+                                <label for="highschool-radio" id="radio-label">High School</label>
+                            </li>
+                            <li class="group">
+                                <input type="radio" name="education" id="associates-radio" value="associates">
+                                <label for="associates-radio" id="radio-label">Associates</label>
+                            </li>
+                            <li class="group">
+                                <input type="radio" name="education" id="bachelors-radio" value="bachelors">
+                                <label for="bachelors-radio" id="radio-label">Bachelors</label>
+                            </li>
+                            <li class="group">
+                                <input type="radio" name="education" id="masters-radio" value="masters">
+                                <label for="masters-radio" id="radio-label">Masters or higher</label>
+                            </li>
+                        </ul>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Comments & Questions</legend>
-                    <p>Addition comments:</p>
-                    <textarea rows="10"></textarea>
-                    <button type="submit" id="submit" name="button">Submit</button>
-                </fieldset>
-            </form>
-        </main>
+                    <fieldset>
+                        <legend>Comments & Questions</legend>
+                        <p>Addition comments:</p>
+                        <textarea rows="10"></textarea>
+                        <button type="submit" id="submit" name="button">Submit</button>
+                    </fieldset>
+                </form>
+            </main>
+        </div>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>

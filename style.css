@@ -1,8 +1,12 @@
+html, main {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: tomato;
     font-family: 'Nanum Gothic Coding', monospace;
     display: flex;
-    flex-direction: column;
 }
 
 header {
@@ -11,10 +15,10 @@ header {
 
 form {
     background-color: white;
-    margin: 20px;
-    padding: 25px;
+    margin: 10px auto;
+    padding: 15px;
     border-radius: 5px;
-    width: 500px;
+    width: 90%;
 }
 
 fieldset {
@@ -40,10 +44,14 @@ ul {
 }
 
 textarea {
-    width: 99%;
-    margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 #dropdown {
     width: 50px;
+}
+
+.container {
+    margin: 0 auto;
 }
